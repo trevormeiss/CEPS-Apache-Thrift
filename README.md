@@ -5,7 +5,7 @@ An overview of the CEPS protocol can be found in chapter 3 of **Secure Multipart
 
 This protocol allows for quantum-secure [multiparty computation](https://en.wikipedia.org/wiki/Secure_multi-party_computation) without a trusted third party. This protocol assumes "honest, but curious" players.
 
-Essentially, players can perform functions on their values without revealing their values to anyone else. For example, a group of friends can use CEPS to compute the average amount of time the group exercises per week without revealing any embarrassingly information.
+Essentially, players can perform functions on the entire group's values without learning the values of anyone else in the group. One commonly used example is [Yao's Millionaires' Problem](https://en.wikipedia.org/wiki/Yao%27s_Millionaires%27_Problem). For another example, a group of friends can use CEPS to compute the average amount of time the group exercises per week without revealing any embarrassingly information. If *p1, p2, p3* are the amounts of time the first, second, and third friends exercise respectively, then the average amount of time is *(p1+p2+p3)/3*. With this protocol, *p1* can find the average amount of time without learning *p2* and *p3*. Similarly, *p2* does not learn *p1* and *p3*, and *p3* does not learn *p1* and *p2*.
 
 ## Video Demonstration
 https://youtu.be/3a-1CwefV3o
