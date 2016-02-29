@@ -6,7 +6,7 @@ An overview of the CEPS protocol can be found in chapter 3 of **Secure Multipart
 This protocol allows for quantum-secure [multiparty computation](https://en.wikipedia.org/wiki/Secure_multi-party_computation) without a trusted third party.
 
 ## Design Overview
-![Components](https://drive.google.com/file/d/0B4J31Dd02HF9ZFNIcHJEWXUxNTg/view?usp=sharing)
+![Schematic](https://github.com/trevormeiss/CEPS-Apache-Thrift/blob/master/CEPS_Apache_Thrift.png)
 
 ## Build
 1. Download, Build, and Install [Apache Thrift](https://thrift.apache.org/)
