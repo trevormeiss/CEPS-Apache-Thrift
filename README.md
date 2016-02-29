@@ -3,10 +3,12 @@ An implementation of Circuit Evaluation with Passive Security using Apache Thrif
 
 An overview of the CEPS protocol can be found in chapter 3 of **Secure Multiparty Computation and Secret Sharing** by Ronald Cramer (Centrum Wiskunde & Informatica), Ivan Damgard, and Jesper Nielsen (Aarhus University).
 
-This protocol allows for quantum-secure [multiparty computation](https://en.wikipedia.org/wiki/Secure_multi-party_computation) without a trusted third party.
+This protocol allows for quantum-secure [multiparty computation](https://en.wikipedia.org/wiki/Secure_multi-party_computation) without a trusted third party. This protocol assumes "honest, but curious" players.
 
 ## Design Overview
 ![Schematic](https://github.com/trevormeiss/CEPS-Apache-Thrift/blob/master/CEPS_Apache_Thrift.png)
+### Why Apache Thrift?
+While this implementation solely uses C++, Apache Thrift allows for scalable cross-language communication. Therefore each player and admin can be implemented in Python, Java, or many other languages and still be able to perform secure multiparty computation.
 
 ## Build
 1. Download, Build, and Install [Apache Thrift](https://thrift.apache.org/)
