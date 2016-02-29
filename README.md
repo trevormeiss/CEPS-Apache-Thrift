@@ -12,6 +12,7 @@ https://youtu.be/3a-1CwefV3o
 
 ## Design Overview
 Players are defined in *CEPS_Player.cpp*. Each player has a unique number and a value that they do not want to reveal to the other players. Each player also knows the IP address and port of all players, which allows for sending input and output shares.
+
 ![Schematic](https://github.com/trevormeiss/CEPS-Apache-Thrift/blob/master/CEPS_Apache_Thrift.png)
 ### Why Apache Thrift?
 While this implementation solely uses C++, Apache Thrift allows for scalable cross-language communication. Therefore each player and admin can be implemented in Python, Java, or many other languages and still be able to perform secure multiparty computation.
