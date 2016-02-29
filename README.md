@@ -44,7 +44,7 @@ The admin exists to connect, initialize, and send expressions to the players. Th
     * `p2 * p3 * p1 + p2^7`
   * Invalid examples:
     * `p1/5` - division not yet supported
-    * `p1^p2` - power must be natural number in Zp
+    * `p1^p2` - power must be natural number
     * `x1+x2*3` - player variables are specified with 'p'
 8. End CEPS
   * `q`
