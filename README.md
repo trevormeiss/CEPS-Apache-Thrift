@@ -9,6 +9,8 @@ This protocol allows for quantum-secure [multiparty computation](https://en.wiki
 ![Schematic](https://github.com/trevormeiss/CEPS-Apache-Thrift/blob/master/CEPS_Apache_Thrift.png)
 ### Why Apache Thrift?
 While this implementation solely uses C++, Apache Thrift allows for scalable cross-language communication. Therefore each player and admin can be implemented in Python, Java, or many other languages and still be able to perform secure multiparty computation.
+### Why is there an Admin?
+The admin exists to connect, initialize, and send expressions to the players. The admin does not view any of the communication between players. One could easily move the admin functionality to the players to get rid of the third party.
 
 ## Build
 1. Download, Build, and Install [Apache Thrift](https://thrift.apache.org/)
