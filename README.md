@@ -1,9 +1,11 @@
 # CEPS-Apache-Thrift
-An implementation of Circuit Evaluation with Passive Security using Apache Thrift
+An implementation of Circuit Evaluation with Passive Security (CEPS) using Apache Thrift
 
 An overview of the CEPS protocol can be found in chapter 3 of **Secure Multiparty Computation and Secret Sharing** by Ronald Cramer (Centrum Wiskunde & Informatica), Ivan Damgard, and Jesper Nielsen (Aarhus University).
 
 This protocol allows for quantum-secure [multiparty computation](https://en.wikipedia.org/wiki/Secure_multi-party_computation) without a trusted third party. This protocol assumes "honest, but curious" players.
+
+Essentially, players can perform functions on their values without revealing their values to anyone else. For example, a group of friends can use CEPS to compute the average amount of time the group exercises per week without revealing any embarrassingly information.
 
 ## Video Demonstration
 https://youtu.be/3a-1CwefV3o
