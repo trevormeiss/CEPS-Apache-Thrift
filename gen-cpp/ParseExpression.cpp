@@ -237,7 +237,7 @@ double RPNtoDouble( std::vector<std::string> &tokens )
     return strtod( st.top().c_str(), NULL );
 }
 
-int RPNtoInt(std::vector<std::string> &tokens, const std::vector<int> &playerValues) {
+int RPNtoInt(std::vector<std::string> &tokens, const std::vector<int> &playerValues, const int prime) {
     std::stack<std::string> st;
     
     // For each token
@@ -288,8 +288,8 @@ int RPNtoInt(std::vector<std::string> &tokens, const std::vector<int> &playerVal
                     result = num2;
             }
             
-            
             // Push result onto stack
+            result = ((result % prime) + prime) % prime;
             std::ostringstream s;
             s << result;
             st.push( s.str() );

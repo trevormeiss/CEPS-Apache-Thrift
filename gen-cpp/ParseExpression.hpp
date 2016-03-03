@@ -15,6 +15,6 @@
 
 std::vector<std::string> parseExpression(std::string s);
 void printRPN(std::vector<std::string> &RPN);
-int RPNtoInt(std::vector<std::string> &tokens, const std::vector<int> &playerValues);
+int RPNtoInt(std::vector<std::string> &tokens, const std::vector<int> &playerValues, const int prime);
 
 #endif /* ParseExpression_hpp */

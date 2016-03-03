@@ -146,7 +146,7 @@ void beginCEPS(map<ServerAddress, AdministratorClientTransport*> &connectedPlaye
       // Convert the expression into reverse polish notation
       vector<string> RPN = parseExpression(expression);
       printRPN(RPN);
-      int expectedAnswer = ((RPNtoInt(RPN, playerValues) % prime) + prime) % prime;
+      int expectedAnswer = RPNtoInt(RPN, playerValues, prime);
       cout << "           Expected Answer: " << expectedAnswer << "\n\n";
 
       // Start a thread for each player
